@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+actor "Author" as fc
+actor "Admin" as admin
+
+rectangle "blog application" {
+  usecase "CRUD Articles" as UC1
+  usecase "View Articles" as UC2
+
+  usecase "Manage Categories" as UC3
+  usecase "CRUD Users" as UC4
+
+}
+
+fc -- UC1
+fc -- UC2
+
+admin -- UC3
+admin -- UC4
+
+
+@enduml
